@@ -349,7 +349,7 @@ public class ReleaseManagementCI extends Notifier implements Serializable {
                 }
             } catch (ReleaseManagementException ex) {
                 logger.log(Level.WARNING,
-                        projects,
+                        System.out.println(projects),
                         ex);
             }
             return listBoxModel;
