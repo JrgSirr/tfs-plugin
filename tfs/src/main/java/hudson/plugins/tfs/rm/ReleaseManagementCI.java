@@ -349,7 +349,7 @@ public class ReleaseManagementCI extends Notifier implements Serializable {
                 }
             } catch (ReleaseManagementException ex) {
                 logger.log(Level.WARNING,
-                           String.join(" ", projects),
+                           String.format("Get team project for collection url: %s failed.", collectionUrl),
                            ex);
             }
             return listBoxModel;
