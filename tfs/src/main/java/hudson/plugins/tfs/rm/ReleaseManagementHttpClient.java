@@ -65,7 +65,7 @@ public class ReleaseManagementHttpClient
     {
         String url = this.accountUrl + "/_apis/projects?api-version=1.0";
         String response = this.ExecuteGetMethod(url);
-        System.out.println(response);
+        System.out.println("HOLA!!!!!!!" + response);
         try {
             String values = new JSONObject(response).getString("value");
             return Arrays.asList(new Gson().fromJson(values, Project[].class));
