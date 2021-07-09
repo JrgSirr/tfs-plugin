@@ -69,7 +69,7 @@ public class ReleaseManagementHttpClient
             String values = new JSONObject(response).getString("value");
             return Arrays.asList(new Gson().fromJson(values, Project[].class));
         } catch (JSONException ex) {
-            System.out.println("HOLA!!!!!!!" + response);
+            System.out.println("HOLA!!!!!!!!!!!!" + response);
             throw new ReleaseManagementException(ex);
         }
     }
